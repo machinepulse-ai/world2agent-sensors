@@ -1,0 +1,69 @@
+{
+  "name": "@world2agent/sensor-hackernews",
+  "version": "0.1.0-alpha.0",
+  "description": "World2Agent sensor — poll Hacker News for trending stories",
+  "license": "Apache-2.0",
+  "author": "MachinePulse AI",
+  "homepage": "https://github.com/machinepulse-ai/world2agent-sensors/tree/main/hackernews",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/machinepulse-ai/world2agent-sensors.git",
+    "directory": "hackernews"
+  },
+  "bugs": {
+    "url": "https://github.com/machinepulse-ai/world2agent-sensors/issues"
+  },
+  "keywords": [
+    "world2agent",
+    "w2a",
+    "sensor",
+    "connector",
+    "hackernews",
+    "hn"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "w2a-sensor-hackernews": "./dist/bin.js"
+  },
+  "scripts": {
+    "start": "node dist/bin.js",
+    "build": "tsc --build",
+    "clean": "rm -rf dist *.tsbuildinfo",
+    "prepublishOnly": "pnpm run clean && pnpm run build"
+  },
+  "dependencies": {
+    "@world2agent/sdk": "0.1.0-alpha.1",
+    "zod": "^3.25.0"
+  },
+  "files": [
+    "dist",
+    "SETUP.md",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "w2a": {
+    "type": "sensor",
+    "source_type": "hackernews",
+    "signals": [
+      "hackernews.story.trending"
+    ],
+    "setup": "./SETUP.md"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^5.8.0"
+  }
+}
