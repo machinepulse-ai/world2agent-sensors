@@ -14,7 +14,7 @@ npm install -g @world2agent/sensor-hackernews
 
 ## Signals emitted
 
-- `hackernews.story.trending`
+- `news.story.trending`
 
 ## Run
 

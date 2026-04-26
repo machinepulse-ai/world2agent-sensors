@@ -60,7 +60,7 @@ Irrelevant topics → silent skip. Don't separately ask.
 ---
 name: world2agent-sensor-hackernews
 user-invocable: false
-description: Handle Hacker News story signals (hackernews.story.*). Topics: [USER_TOPICS].
+description: Handle Hacker News story signals (news.story.*, source_type=hackernews). Topics: [USER_TOPICS].
 ---
 
 # HackerNews Signal Handler

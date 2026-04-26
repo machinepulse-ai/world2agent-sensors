@@ -22,7 +22,7 @@ export function transformStory(
 
   return createSignal(spec, {
     event: {
-      type: "hackernews.story.trending",
+      type: "news.story.trending",
       occurred_at: story.time * 1000,
       summary,
     },
