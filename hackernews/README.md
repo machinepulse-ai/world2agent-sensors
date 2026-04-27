@@ -19,10 +19,10 @@ npm install -g @world2agent/sensor-hackernews
 ## Run
 
 ```bash
-W2A_MIN_SCORE=200 W2A_POLL_INTERVAL_MS=300000 w2a-sensor-hackernews
+w2a-sensor-hackernews
 ```
 
-See [`SETUP.md`](./SETUP.md) for deployment patterns (local daemon, Cloudflare relay, etc.) and [`SKILL.md`](./SKILL.md) for the agent-facing guide.
+See [`SETUP.md`](./SETUP.md) for deployment patterns, configuration, and handler-skill setup.
 
 ## License
 

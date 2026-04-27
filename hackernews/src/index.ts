@@ -4,7 +4,7 @@ import { start } from "./start.js";
 
 export default defineSensor({
   id: "@world2agent/sensor-hackernews",
-  version: "0.1.0-alpha.0",
+  version: "0.1.0-alpha.2",
   source_type: "hackernews",
   configSchema: hackernewsConfigSchema,
   auth: { type: "none" },
