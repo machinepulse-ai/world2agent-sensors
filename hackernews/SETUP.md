@@ -8,8 +8,8 @@ All scores are HN official data (`score` = net upvotes, `descendants` = total co
 
 | Parameter | Type | Default | Description |
 |---|---|---|---|
-| `top_n` | number | 30 | How many top stories to watch |
-| `min_score` | number | 1 | Below this score → skipped |
+| `top_n` | number | 10 | How many top stories to watch |
+| `min_score` | number | 20 | Below this score → skipped |
 | `min_comments` | number | 0 | Below this comment count → skipped |
 | `interval_seconds` | number | 300 | Poll interval |
 
@@ -17,9 +17,9 @@ All scores are HN official data (`score` = net upvotes, `descendants` = total co
 
 At most 3 questions.
 
-1. **"Defaults are: top 30 stories, min score 50, 5-minute polling. Keep or change?"**
+1. **"Defaults are: top 10 stories, min score 20, 5-minute polling. Keep or change?"**
 
-   `min_score: 50` is the recommended persona default (below that is noise). User can tighten or loosen. Skip if they say defaults fine.
+   `min_score: 20` is the recommended persona default (below that is noise). User can tighten or loosen. Skip if they say defaults fine.
 
 2. **"What topics do you care about?"**
 
@@ -41,8 +41,8 @@ Irrelevant topics → silent skip. Don't separately ask.
     {
       "package": "@world2agent/sensor-hackernews",
       "config": {
-        "top_n": 30,
-        "min_score": 50,
+        "top_n": 10,
+        "min_score": 20,
         "min_comments": 0,
         "interval_seconds": 300
       },
