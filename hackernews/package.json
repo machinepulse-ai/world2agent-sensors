@@ -1,9 +1,9 @@
 {
   "name": "@world2agent/sensor-hackernews",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "description": "World2Agent sensor — poll Hacker News for trending stories",
   "license": "Apache-2.0",
-  "author": "MachinePulse AI",
+  "author": "MachinePulse Pte. Ltd.",
   "homepage": "https://github.com/machinepulse-ai/world2agent-sensors/tree/main/hackernews",
   "repository": {
     "type": "git",
